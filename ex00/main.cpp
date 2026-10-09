@@ -6,7 +6,7 @@
 /*   By: adeestev <adeestev@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/04 14:16:37 by adeestev          #+#    #+#             */
-/*   Updated: 2026/10/08 13:31:26 by adeestev         ###   ########.fr       */
+/*   Updated: 2026/10/09 15:30:32 by adeestev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,9 +50,18 @@ int main(void)
     std::cout << "Swapping: "<< "e = " << e << ", f = " << f << std::endl;
     ::swap(e, f);
     std::cout << "Swapping again: "<< "e = " << e << ", f = " << f << std::endl;
-
     std::cout << "Returning min(e, f) = " << ::min(e, f) << std::endl;
     std::cout << "Returning max(e, f) = " << ::max(e, f) << std::endl;
+    std::cout << std::endl;
 
+    std::cout << " -- Testing same values: --" << std::endl;
+    int g = 8;
+    int h = 8;
+    std::cout << "Address of g is: " << &g << " and address of h is: " << &h << std::endl;
+    std::cout << "After applying the function templates: " << std::endl;
+    std::cout << "Returning min (g, h) = " << &::min(g, h) << " (Address of second one)" << std::endl;
+    std::cout << "Returning max (g, h) = " << &::max(g, h) << " (Address of second one)" << std::endl;
+    std::cout << std::endl;
+    
     return (0);
 }
