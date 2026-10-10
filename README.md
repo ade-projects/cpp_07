@@ -6,15 +6,15 @@ C++ Module 07 introduces generic programming using C++ templates. This module sh
 
 ## Exercises Overview
 
- **Exercise 00: A few functions**
+* **Exercise 00: A few functions**
 
 Requires the implementation of foundational function templates: swap, min, and max. These generic functions must be able to handle any data type (including complex instantiated classes) directly passed to them, relying on standard comparison operators.
 
-**Exercise 01: Iter**
+* **Exercise 01: Iter**
 
 Introduces an iter function template capable of iterating over an array of any type and applying a specified function to each element. This exercise demonstrates how to pass function pointers as parameters to template functions, bridging generic programming with basic functional concepts.
 
-**Exercise 02: Array**
+* **Exercise 02: Array**
 
 Focuses on class templates by requiring the development of a dynamically allocated Array class. The implementation must behave similarly to standard C++ containers, featuring default construction, parameterized sizing, deep copy mechanics (via copy constructor and assignment operator), a size() function, and a custom exception thrown for out-of-bounds index access via the [] operator.
 
