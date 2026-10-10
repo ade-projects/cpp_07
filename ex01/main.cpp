@@ -6,7 +6,7 @@
 /*   By: adeestev <adeestev@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/04 15:48:49 by adeestev          #+#    #+#             */
-/*   Updated: 2026/10/04 18:19:47 by adeestev         ###   ########.fr       */
+/*   Updated: 2026/10/10 11:14:11 by adeestev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 #include <string>
 #include "iter.hpp"
 
-template <typename T>
-void printElement(const T &element)
+template <typename type>
+void printElement(const type &element)
 {
 	std::cout << element << " ";
 }
